@@ -4,9 +4,7 @@
 $(document).ready(function(){
     $(window).on("load",function(){
             //invoke the main function
-            waterfall();
-
-
+            position();
            $(window).scroll(function(){
                var data=[
                    {"src":"1.jpg","title":"first in row 1"},
@@ -32,11 +30,11 @@ $(document).ready(function(){
                        var imgs=$("<a>").text($(value).attr("title")).appendTo(title);
                    })
                }
-               waterfall();
+               position();
         })
 
        $(window).resize(function(){
-           waterfall();
+           position();
            //window.location.reload();
        })
 
