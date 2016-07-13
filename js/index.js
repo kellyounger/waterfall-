@@ -5,6 +5,8 @@ $(document).ready(function(){
     $(window).on("load",function(){
             //invoke the main function
             waterfall();
+
+
            $(window).scroll(function(){
                var data=[
                    {"src":"1.jpg","title":"first in row 1"},
